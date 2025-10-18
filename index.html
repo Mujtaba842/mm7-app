@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M.M7 — Your Hunger Partner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1 class="logo">M.M7</h1>
+    <p class="tagline">Your Hunger Partner 🍪</p>
+
+    <!-- Login Section -->
+    <div id="login-screen" class="screen active">
+      <h2>Login</h2>
+      <input type="email" id="email" placeholder="Enter Email" />
+      <input type="password" id="password" placeholder="Enter Password" />
+      <button id="login-btn">Login</button>
+      <p class="note">Use <b>admin@mm7.com</b> / <b>mm7admin</b> for Admin Panel</p>
+    </div>
+
+    <!-- Chat + Order Section -->
+    <div id="chat-screen" class="screen">
+      <div class="chat-header">
+        <span>M.M7 Crew</span>
+        <button id="logout-btn">Logout</button>
+      </div>
+      <div id="chat-box" class="chat-box"></div>
+      <div class="chat-input">
+        <input type="text" id="chat-message" placeholder="Type your message..." />
+        <button id="send-btn">Send</button>
+      </div>
+      <button id="order-btn">🛒 Order Snacks</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
